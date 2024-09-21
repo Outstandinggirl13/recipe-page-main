@@ -166,7 +166,10 @@ h2 {
 }
 
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: inherit; 
+    text-align: center;
+    background-color: var(--white);
+    padding: 1rem;
 }
 
 .attribution a { 
