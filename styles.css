@@ -85,7 +85,7 @@ main {
 .recipe-info__description-highlighted ul {
     margin-top: 0.75rem; 
     padding-left: 1.25rem;
-        /*padding: 0 2.5rem;*/ /*???*/
+    /*padding: 0 2.5rem;*/ /*???*/
 }
 
 .recipe-info__description-highlighted li {
@@ -135,6 +135,34 @@ h2 {
 .recipe-info__ingredients li:last-of-type,
 .recipe-info__instructions li:last-of-type {
     margin-bottom: 2rem;
+}
+
+.recipe-info__instructions li::marker,
+.recipe-info__nutrition-table td:last-of-type {
+    color: var(--brown-800);
+    font-weight: 600;
+}
+
+.recipe-info__nutrition p {
+    margin-top: 1.125rem;
+}
+
+.recipe-info__nutrition-table {
+    border-collapse: collapse;
+    border-style: hidden; /*displays no border on the TABLE edges*/
+    width: 100%;
+    margin-top: 1.25rem; /*???*/
+}
+
+.recipe-info__nutrition-table tr,
+.recipe-info__nutrition-table td {
+    border-bottom: 0.1rem solid var(--stone-150);
+    height: 3rem;
+}
+
+.recipe-info__nutrition-table td:first-of-type {
+    padding-left: 2rem;
+    width: 50%;
 }
 
 .attribution { 
