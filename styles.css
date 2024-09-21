@@ -32,6 +32,89 @@ body {
     font-family: "Outfit";
     background-color: var(--stone-100);
     color: var(--stone-600);
+    width: 100%;
+}
+
+main {
+    background-color: var(--white);
+    width: 100%;
+}
+
+.recipe-image {
+    width: 100%;
+}
+
+.recipe-image img {
+    width: 100%;
+/*  height: auto; */
+    vertical-align: top; /*helps to get rid of whitespace under the image (inline element bug)*/
+}
+
+.recipe-info {
+    padding: 2rem;
+}
+
+.recipe-info__description h1{
+    color: var(--stone-900);
+    font-family: 'Young Serif';
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    margin: 0.5rem 0;
+}
+
+.recipe-info__description p {
+    line-height: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.recipe-info__description-highlighted {
+    background-color: var(--rose-50);
+    border-radius: 0.75rem; /*?*/
+    padding: 1.5rem;
+    margin: 1.875rem 0;
+}
+
+.recipe-info__description-highlighted h3 {
+    color: var(--rose-800);
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    font-weight: 600;
+}
+
+.recipe-info__description-highlighted ul {
+    margin-top: 0.75rem; 
+    padding-left: 1.25rem;
+        /*padding: 0 2.5rem;*/ /*???*/
+}
+
+.recipe-info__description-highlighted li {
+    margin-top: 0.5rem;
+    line-height: 1.5rem;
+    list-style-position: outside;
+    padding-left: 1.25rem;
+    /*list-style-type: "•"; */ /*???*/
+}
+
+.recipe-info__description-highlighted li::marker {
+    font-size: 0.75rem;
+    color: var(--rose-800);
+}
+
+li > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* .recipe-info__description-highlighted li:first-of-type::marker {
+    line-height: 400%;
+} */
+
+h2 {
+    font-family: 'Young Serif';
+    color: var(--brown-800);
+    font-weight: 400;
+    font-size: 1.75rem;
 }
 
 .attribution { 
