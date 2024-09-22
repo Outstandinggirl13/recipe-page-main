@@ -46,7 +46,6 @@ main {
 
 .recipe-image img {
     width: 100%;
-/*  height: auto; */
     vertical-align: top; /*helps to get rid of whitespace under the image (inline element bug)*/
 }
 
@@ -70,7 +69,7 @@ main {
 
 .recipe-info__description-highlighted {
     background-color: var(--rose-50);
-    border-radius: 0.75rem; /*?*/
+    border-radius: 0.75rem;
     padding: 1.5rem;
     margin-top: 1.875rem;
 }
@@ -119,10 +118,16 @@ h2 {
     border-bottom: 0.1rem solid var(--stone-150);
 }
 
-.recipe-info__ingredients ul,
+.recipe-info__ingredients ul {
+    margin-top: 0.875rem;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
 .recipe-info__instructions ol {
     margin-top: 1.125rem;
     padding-left: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .recipe-info__ingredients li,
@@ -130,11 +135,6 @@ h2 {
     line-height: 1.5rem;
     margin: 0.5rem 0;
     padding-left: 1rem;
-}
-
-.recipe-info__ingredients li:last-of-type,
-.recipe-info__instructions li:last-of-type {
-    margin-bottom: 2rem;
 }
 
 .recipe-info__instructions li::marker,
@@ -151,7 +151,7 @@ h2 {
     border-collapse: collapse;
     border-style: hidden; /*displays no border on the TABLE edges*/
     width: 100%;
-    margin-top: 1.25rem; /*???*/
+    margin-top: 1.25rem;
 }
 
 .recipe-info__nutrition-table tr,
@@ -166,7 +166,7 @@ h2 {
 }
 
 .attribution { 
-    font-size: inherit; 
+    font-size: 0.875rem; 
     text-align: center;
     background-color: var(--white);
     padding: 1rem;
@@ -174,4 +174,50 @@ h2 {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 768px) {
+
+    main {
+        min-width: 46rem;
+        width: 50%;
+        border-radius: 24px;
+        overflow: hidden;
+        margin: 7.75rem auto;
+    }
+
+    .recipe-image img {
+        border-radius: 0.75rem;
+        padding: 2.5rem 2.5rem 0 2.5rem;
+    }
+
+    .recipe-info__description h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .recipe-info__description-highlighted {
+        margin-top: 2rem;
+    }
+
+    h2 {
+        margin-top: 1.875rem;
+        line-height: 2rem;
+    }
+
+    .recipe-info__ingredients ul {
+        margin-top: 1.125rem;
+        padding-left: 1.5rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .recipe-info__instructions ol {
+        margin-top: 1.375rem;
+        padding-left: 1.5rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .attribution {
+        background-color: var(--stone-100);
+    }
 }
