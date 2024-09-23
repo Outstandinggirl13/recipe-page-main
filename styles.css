@@ -47,7 +47,7 @@ main {
 
 .recipe-image img {
     width: 100%;
-    vertical-align: top; /*helps to get rid of whitespace under the image (inline element bug)*/
+    vertical-align: top;
 }
 
 .recipe-info {
@@ -145,7 +145,7 @@ h2 {
 
 .recipe-info__nutrition-table {
     border-collapse: collapse;
-    border-style: hidden; /*displays no border on the TABLE edges*/
+    border-style: hidden;
     width: 100%;
     margin-top: 1.25rem;
 }
