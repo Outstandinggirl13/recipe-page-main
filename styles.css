@@ -174,7 +174,7 @@ h2 {
     text-align: center;
     background-color: var(--white);
     padding: 1rem;
-    display: none;
+    /* display: none; */
 }
 
 .attribution a { 
@@ -242,6 +242,6 @@ h2 {
 
     .attribution {
         background-color: var(--stone-100);
-        display: none;
+        /* display: none; */
     }
 }

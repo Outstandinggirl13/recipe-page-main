@@ -37,7 +37,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 At first, I didn’t expect this project to be tricky, but it turned out to be quite time-consuming. Two of the major challenges I faced were adjusting the padding/margin values to suit both mobile and desktop versions, and styling the bullet points in the lists.
 
-The first issue was frustrating because the provided mobile and desktop designs had different margins, making it hard to replicate the design. I ended up with what I believe is overly complicated CSS, and no matter how much I tried to simplify it, I couldn’t get to a result I was happy with. This experience taught me that consistency is crucial in design. It should be based on repeating and reusable elements to make development easier and faster.
+The first issue was frustrating because the provided mobile and desktop designs had different margins, making it hard to replicate the design. I ended up with what feels like overloaded CSS, and despite my efforts to simplify it, I couldn’t achieve a result I was satisfied with. This experience taught me that consistency is crucial in design. It should be based on repeating and reusable elements to make development easier and faster.
 
 The second challenge was a real headache! I used a mobile-first approach, and in the mobile design, the bullet points needed to be vertically centered across all rows when a list item became multiline. Additionally, there was some whitespace between the bullets and the text. After some research, I realized there’s no easy or convenient way to style list markers the way I wanted.
 
@@ -94,7 +94,7 @@ Now that the frustrating part is over, I’d like to share some interesting CSS 
 
 2. For a smooth transition between mobile and desktop versions, I used a media query, and for screens with widths bigger than 736px, I set a min-width of 736px. I also added a width of 50%, so on larger screens, the width of the main section expands slightly but still matches the design, taking up about 50% of the screen space.
 ```css
-  @media (min-width: 768px) {
+  @media (min-width: 48rem) {
     main {
         min-width: 46rem;
         width: 50%;
