@@ -199,7 +199,7 @@ h2 {
 
     .recipe-info {
         padding: 2.5rem;
-        padding-bottom: 1.75rem;
+        padding-bottom: 2rem;
     }
 
     .recipe-info__description h1 {
@@ -224,6 +224,10 @@ h2 {
     .recipe-info__ingredients ul {
         margin: 1.125rem 0 1.75rem 0;
         padding-left: 1.5rem;
+    }
+
+    .recipe-info__ingredients li {
+        margin: 0.4rem 0;
     }
 
     .recipe-info__instructions ol {
