@@ -39,7 +39,7 @@ At first, I didn’t expect this project to be tricky, but it turned out to be q
 
 The first issue was frustrating because the provided mobile and desktop designs had different margins, making it hard to replicate the design. I ended up with what feels like overloaded CSS, and despite my efforts to simplify it, I couldn’t achieve a result I was satisfied with. This experience taught me that consistency is crucial in design. It should be based on repeating and reusable elements to make development easier and faster.
 
-The second challenge was a real headache! I used a mobile-first approach, and in the mobile design, the bullet points needed to be vertically centered across all rows when a list item became multiline. Additionally, there was some whitespace between the bullets and the text. After some research, I realized there’s no easy or convenient way to style list markers the way I wanted.
+The second challenge was an absolute hassle! I used a mobile-first approach, and in the mobile design, when horizontal screen space is limited, list items start to span multiple rows. The bullet points have to be vertically centered for these multi-line list items. Additionally, there were some whitespaces between the bullets and the text. After some research, I realized there’s no easy or convenient way to style list markers the way I wanted.
 
 To fix the vertical alignment issue, I used an approach I found online:
 1. I covered the `<li>` items with `<span>` tag
